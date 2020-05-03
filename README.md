@@ -3,16 +3,17 @@
 [![APLv2][license-badge]][LICENSE]
 [![Build Status][travis-badge]][travis-ci]
 
-[![Sponsor][sponsor-badge]][sponsor]
 
-# node-typescript-boilerplate
+# fastify-graphql-typescript-boilterplate
 
-Minimalistic boilerplate to jump-start a [Node.js][nodejs] project in [TypeScript][typescript] [3.7][typescript-37].
+Minimalistic boilerplate to quick-start Node.js development in TypeScript with Fastify and GraphQL.
 
 What's included:
 
 + [TypeScript][typescript] [3.7][typescript-37],
 + [ESLint][eslint] with some initial rules recommendation,
++ [GrapqhQL][graphql] with grapqhl-compose-mongoose,
++ [Fastify][fastify] with initial routing setup,
 + [Jest][jest] unit testing and code coverage,
 + Type definitions for Node.js and Jest,
 + [Prettier][prettier] to enforce a consistent code style,
@@ -29,17 +30,11 @@ To start, just click the **[Use template][repo-template-action]** link (or the g
 or clone the repository with following commands:
 
 ```sh
-git clone https://github.com/jsynowiec/node-typescript-boilerplate
-cd node-typescript-boilerplate
-npm install
+git clone https://github.com/anku255/fastify-graphql-ts-boilterplate
+cd fastify-graphql-ts-boilterplate
+yarn install
 ```
 
-or download and unzip current `master` branch:
-
-```sh
-wget https://github.com/jsynowiec/node-typescript-boilerplate/archive/master.zip -O node-typescript-boilerplate
-unzip node-typescript-boilerplate.zip && rm node-typescript-boilerplate.zip
-```
 
 Now start adding your code in the `src` and unit tests in the `__tests__` directories. Have fun and build amazing things 🚀
 
@@ -54,9 +49,21 @@ This is **optional**, but if you want to learn how to write JavaScript tests for
 + `clean` - remove coverage data, Jest cache and transpiled files,
 + `build` - transpile TypeScript to ES6,
 + `build:watch` - interactive watch mode to automatically transpile source files,
++ `start:qa` - interactive watch mode using nodemon to automatically transpile source files,
 + `lint` - lint source files and tests,
 + `test` - run tests,
 + `test:watch` - interactive watch mode to automatically re-run tests
+
+## Environment Variables
+
+Create an `.env` file in the root directory and add the environmental variables there.
+
+```
+PORT=8000
+DATABASE=
+JWT_SECRET=myjwtsecret
+JWT_EXPIRATION=30d
+```
 
 ## License
 Licensed under the APLv2. See the [LICENSE](https://github.com/jsynowiec/node-typescript-boilerplate/blob/master/LICENSE) file for details.
@@ -67,6 +74,8 @@ Licensed under the APLv2. See the [LICENSE](https://github.com/jsynowiec/node-ty
 [travis-badge]: https://travis-ci.org/jsynowiec/node-typescript-boilerplate.svg?branch=master
 [travis-ci]: https://travis-ci.org/jsynowiec/node-typescript-boilerplate
 [typescript]: https://www.typescriptlang.org/
+[graphql]: https://graphql.org/
+[fastify]: https://www.fastify.io/
 [typescript-37]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html
 [license-badge]: https://img.shields.io/badge/license-APLv2-blue.svg
 [license]: https://github.com/jsynowiec/node-typescript-boilerplate/blob/master/LICENSE
