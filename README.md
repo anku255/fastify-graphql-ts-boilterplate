@@ -1,7 +1,6 @@
 [![TypeScript version][ts-badge]][typescript-37]
 [![Node.js version][nodejs-badge]][nodejs]
 [![APLv2][license-badge]][LICENSE]
-[![Build Status][travis-badge]][travis-ci]
 
 
 # fastify-graphql-typescript-boilterplate
@@ -71,8 +70,6 @@ Licensed under the APLv2. See the [LICENSE](https://github.com/jsynowiec/node-ty
 [ts-badge]: https://img.shields.io/badge/TypeScript-3.7-blue.svg
 [nodejs-badge]: https://img.shields.io/badge/Node.js->=%2012.13-blue.svg
 [nodejs]: https://nodejs.org/dist/latest-v12.x/docs/api/
-[travis-badge]: https://travis-ci.org/jsynowiec/node-typescript-boilerplate.svg?branch=master
-[travis-ci]: https://travis-ci.org/jsynowiec/node-typescript-boilerplate
 [typescript]: https://www.typescriptlang.org/
 [graphql]: https://graphql.org/
 [fastify]: https://www.fastify.io/
@@ -88,4 +85,4 @@ Licensed under the APLv2. See the [LICENSE](https://github.com/jsynowiec/node-ty
 [wiki-js-tests]: https://github.com/jsynowiec/node-typescript-boilerplate/wiki/Unit-tests-in-plain-JavaScript
 [prettier]: https://prettier.io
 
-[repo-template-action]: https://github.com/jsynowiec/node-typescript-boilerplate/generate
+[repo-template-action]: https://github.com/anku255/fastify-graphql-ts-boilterplate
